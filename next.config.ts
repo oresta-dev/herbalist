@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    STRAPI_HOST: process.env.STRAPI_HOST,
+    STRAPI_TOKEN: process.env.STRAPI_TOKEN
+  }
 };
 
 export default nextConfig;
